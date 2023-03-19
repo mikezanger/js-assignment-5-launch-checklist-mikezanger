@@ -1,6 +1,6 @@
 // Write your JavaScript code here!
 
-const { formSubmission, myFetch, pickPlanet } = require("./scriptHelper");
+
 
 window.addEventListener("load", function() {
     let list = document.getElementById("faultyItems");
@@ -17,7 +17,7 @@ form.addEventListener("submit", (event)=>{
    let cargoInput = document.querySelector("input[name=cargoMass")
    let cargoLevel = Number(cargoInput.value)
    
-   formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel)  
+   formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) }) 
     let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
    let listedPlanetsResponse = myFetch();
@@ -38,5 +38,5 @@ form.addEventListener("submit", (event)=>{
    
 })
   
-    })
+    
 });
